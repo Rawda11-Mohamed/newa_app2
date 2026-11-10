@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Route News (NewsAPI key)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define=NEWS_API_KEY=${input:newsApiKey}"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "newsApiKey",
+      "type": "promptString",
+      "description": "Enter your NewsAPI.org API key",
+      "password": true
+    }
+  ]
+}
